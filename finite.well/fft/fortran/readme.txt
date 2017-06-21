@@ -1,16 +1,17 @@
-How to compile the source
+1. How to compile the source
 
-#gfortran -O3 -o fw.exe fw.f90 -llapack -I/usr/include -lfftw3 
+gfortran -O3 -o fw.x fw.f90 -llapack -I/usr/include -lfftw3 
 
-Execute the compiled code and produce wafefunction data 
+or
 
-#./fw.exe > plot.dat
+make
 
-Plot the data (press any key in terminal windows in order to quit the gnuplot)
+2. Execute the compiled code and produce wafefunction data 
 
-#gnuplot fwplot.gnu 
+./fw.x > plot.dat
 
-Plot will be saved into PNG file as plot.png
+3. Plot the data (press any key in terminal windows in order to quit the gnuplot)
 
+gnuplot plot.gnu 
 
-
+[Remark:] Plot will be saved into PNG file as plot.png
